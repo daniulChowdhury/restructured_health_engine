@@ -1,0 +1,30 @@
+{% extends "base.html"%}
+{% block user_results %}
+    <main class="d-flex">
+        {% if results|length > 0 %}
+        <div class="list-inline mx-auto">
+            <h2>Results found:</h2>
+            <ul class="list-group">
+                {% for i in results %}
+                <li class="list-group-item">
+                    <!-- <h5>Drug: {{ i[1] }}</h5>
+                    <p>Doseage: {{ i[2] }}</p>
+                    <p>Quantity: {{ i[3] }}</p> -->
+                    <div class="card" style="width: 18rem">
+                        <div class="card-body">
+                          <h5 class="card-title">Drug: {{ i[1] }}</h5>
+                          <p class="card-text">Doseage: {{ i[2] }}</p>
+                          <p class="card-text">Quantity: {{ i[3] }}</p>
+                          <p class="card-text"><small>ID number: {{ i[0] }}</small></p>
+                        </div>
+                      </div>
+                </li>
+                {% endfor %}
+            </ul>
+            {% else %}
+                <h2> No results were found</h2>
+            {% endif %}
+        </div>
+        
+    </main>
+{% endblock %}
