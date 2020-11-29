@@ -1,4 +1,5 @@
 MANIFEST.in
+setup.cfg
 setup.py
 app/__init__.py
 app/db.py
@@ -11,6 +12,8 @@ app.egg-info/dependency_links.txt
 app.egg-info/not-zip-safe
 app.egg-info/requires.txt
 app.egg-info/top_level.txt
+app/static/logo.svg
+app/templates/.DS_Store
 app/templates/base.html
 app/templates/search/index.html
 app/templates/search/result.html

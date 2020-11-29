@@ -11,6 +11,7 @@ jinja2 = "*"
 app = {editable = true,path = "."}
 pytest = "*"
 coverage = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.8"
