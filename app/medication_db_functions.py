@@ -7,7 +7,6 @@ import logging
 def insert_into_db(db_connection, name, dose, number_of_items):
     print("Starting insert medication table")
 
-
     if type(name) is str and type(dose) is str and type(number_of_items) is int:
         cursor = db_connection.cursor()
         cursor.execute("INSERT INTO medication_table (name, dose, number_of_items) VALUES (?,?,?)", (name, dose, number_of_items))

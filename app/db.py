@@ -39,7 +39,7 @@ def create_data():
     drug_storage = []
     print("Creating data for database with OPENFDA information")
 
-    with open('app/Products.txt', newline ='') as drugs:
+    with open('app/table_information/Products.txt', newline ='') as drugs:
         drug_reader = csv.reader(drugs, delimiter='\t')
         for idx, drug in enumerate(drug_reader):
             if '' not in drug:

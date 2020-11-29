@@ -7,9 +7,6 @@
             <ul class="list-group">
                 {% for i in results %}
                 <li class="list-group-item">
-                    <!-- <h5>Drug: {{ i[1] }}</h5>
-                    <p>Doseage: {{ i[2] }}</p>
-                    <p>Quantity: {{ i[3] }}</p> -->
                     <div class="card" style="width: 18rem">
                         <div class="card-body">
                           <h5 class="card-title">Drug: {{ i[1] }}</h5>
@@ -22,7 +19,7 @@
                 {% endfor %}
             </ul>
             {% else %}
-                <h2> No results were found</h2>
+                <h2 class="list-inline mx-auto"> No results were found</h2>
             {% endif %}
         </div>
         

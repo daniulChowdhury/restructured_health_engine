@@ -8,6 +8,9 @@ verify_ssl = true
 [packages]
 flask = "*"
 jinja2 = "*"
+app = {editable = true,path = "."}
+pytest = "*"
+coverage = "*"
 
 [requires]
 python_version = "3.8"
