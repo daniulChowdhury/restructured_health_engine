@@ -1,1 +1,1 @@
-web: gunicorn "restructured_health_engine/app:app"
+web: gunicorn "__init__:app"
