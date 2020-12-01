@@ -1,1 +1,1 @@
-web: gunicorn "myflaskmodule:create_app()"
+web: gunicorn "restructured_health_engine:create_app()"
